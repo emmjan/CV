@@ -83,3 +83,42 @@
 
     }
 }
+
+.design-skills {
+    .skill {
+        margin: 0 0 15px 0;
+
+        .skill-top {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 10px 0;
+            align-items: center;
+
+            .name {
+                color: $primaryColor;
+                font-size: 14px;
+            }
+
+            .percent {
+                color: $statNummberColor;
+                font-size: 14px;
+            }
+        }
+
+        .skill-bottom {
+            .progress {
+                border-radius: 4px;
+                background-color: $progressBarBGColor;
+                height: 6px;
+
+                .bar {
+                    display: block;
+                    height: 100%;
+                    background-color: $progressBarColor;
+                    border-radius: 4px;
+                }
+            }
+
+        }
+    }
+}
