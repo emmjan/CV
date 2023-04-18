@@ -1,0 +1,85 @@
+.aboutme {
+    .person {
+        display: flex;
+        align-items: center;
+
+        .personalinfo {
+            width: 50%;
+            padding: 0 50px;
+
+            h4 {
+                margin: 0 0 15px;
+                color: $personalInfoAboutMeColor;
+                font-weight: 300;
+            }
+
+            h2 {
+                margin: 0 0 30px;
+                @include fluid-type (320px, 1290px, 30px, 46px);
+                color: $primaryColor;
+            }
+
+            p {
+                color: $secondaryColor;
+                line-height: 1.5;
+            }
+        }
+
+        .personalphoto {
+            width: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                display: block;
+                translate: 40px -30px;
+                border-radius: 50% 0% 50% 50%;
+            }
+        }
+    }
+}
+
+.stats {
+    display: flex;
+    margin: 0 -15px;
+
+    .stat-item {
+        width: calc(100% / 3);
+        outline: 1px solid red;
+        padding: 0 15px;
+
+        .outline {
+            padding: 0 20px;
+            box-shadow: 0 1px 5px rgb(0 0 0/15%);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+
+            i {
+                position: absolute;
+                font-size: 78px;
+                inset: 50% auto auto 0;
+                translate: -40% -50%;
+                z-index: 2;
+                color: $secondaryColor;
+                opacity: 0.3;
+            }
+
+            .title {
+                text-align: right;
+                font-weight: 600;
+                color: $primaryColor;
+                margin: 0 0 15px 0;
+
+            }
+
+            .number {
+                text-align: right;
+                color: $statNummberColor;
+                font-size: 36px;
+                margin: 0;
+            }
+        }
+
+    }
+}
