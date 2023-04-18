@@ -5,4 +5,7 @@ Tech I used to create this project
 * SCSS
 * JS
 * GIT
+
+
+
 [My CV Online](https://emmjan.github.io/CV/)
